@@ -1,0 +1,52 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs', '/usr/bin/npm', 'publish' ]
+2 info using npm@1.4.21
+3 info using node@v0.10.29
+4 verbose publish [ '.' ]
+5 verbose cache add [ '.', null ]
+6 verbose cache add name=undefined spec="." args=[".",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: '.',
+7 verbose parsed url   path: '.',
+7 verbose parsed url   href: '.' }
+8 silly lockFile 3a52ce78- .
+9 verbose lock . /home/ioteam/.npm/3a52ce78-.lock
+10 verbose tar pack [ '/home/ioteam/.npm/angular2-fullcalendar/1.0.15/package.tgz',
+10 verbose tar pack   '.' ]
+11 verbose tarball /home/ioteam/.npm/angular2-fullcalendar/1.0.15/package.tgz
+12 verbose folder .
+13 info prepublish angular2-fullcalendar@1.0.15
+14 verbose unsafe-perm in lifecycle true
+15 info angular2-fullcalendar@1.0.15 Failed to exec prepublish script
+16 error addLocalDirectory Could not pack "." to "/home/ioteam/.npm/angular2-fullcalendar/1.0.15/package.tgz"
+17 silly lockFile 3a52ce78- .
+18 silly lockFile 3a52ce78- .
+19 warn This failure might be due to the use of legacy binary "node"
+20 warn For further explanations, please read
+/usr/share/doc/nodejs/README.Debian
+21 error addLocal Could not install .
+22 error angular2-fullcalendar@1.0.15 prepublish: `node_modules/typescript/bin/tsc`
+22 error Exit status 127
+23 error Failed at the angular2-fullcalendar@1.0.15 prepublish script.
+23 error This is most likely a problem with the angular2-fullcalendar package,
+23 error not with npm itself.
+23 error Tell the author that this fails on your system:
+23 error     node_modules/typescript/bin/tsc
+23 error You can get their info via:
+23 error     npm owner ls angular2-fullcalendar
+23 error There is likely additional logging output above.
+24 error System Linux 3.16.0-4-amd64
+25 error command "/usr/bin/nodejs" "/usr/bin/npm" "publish"
+26 error cwd /home/ioteam/developpement/lastproject/ng2-fullcalendar
+27 error node -v v0.10.29
+28 error npm -v 1.4.21
+29 error code ELIFECYCLE
+30 verbose exit [ 1, true ]
