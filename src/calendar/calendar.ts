@@ -44,12 +44,32 @@ export class CalendarComponent implements OnInit,AfterViewInit,AfterContentCheck
     return $(this.element.nativeElement).fullCalendar('updateEvent', event);
   }
 
+  updateEvents(events) {
+    return $(this.element.nativeElement).fullCalendar('updateEvents', events);
+  }
+
   clientEvents(idOrFilter) {
     return $(this.element.nativeElement).fullCalendar('clientEvents', idOrFilter);
   }
 
   removeEvents(idOrFilter) {
     return $(this.element.nativeElement).fullCalendar('removeEvents', idOrFilter);
+  }
+
+  addEventSource(source) {
+    return $(this.element.nativeElement).fullCalendar('addEventSource', source);
+  }
+
+  refetchEvents() {
+    return $(this.element.nativeElement).fullCalendar('refetchEvents');
+  }
+
+  renderEvents(events, stick?) {
+    return $(this.element.nativeElement).fullCalendar('renderEvents', events, stick);
+  }
+
+  rerenderEvents() {
+    return $(this.element.nativeElement).fullCalendar('rerenderEvents');
   }
 
 }
