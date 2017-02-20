@@ -35,8 +35,10 @@ export class CalendarComponent implements OnInit,AfterViewInit,AfterContentCheck
       $("#" + this.name).fullCalendar(this.options);
     }, 100)
   }
+
   ngAfterContentChecked(){
   }
+
   ngAfterViewChecked(){
   }
 
@@ -62,6 +64,10 @@ export class CalendarComponent implements OnInit,AfterViewInit,AfterContentCheck
 
   refetchEvents() {
     return $(this.element.nativeElement).fullCalendar('refetchEvents');
+  }
+
+  renderEvent(event, stick?) {
+    return $(this.element.nativeElement).fullCalendar('renderEvent', event, stick);
   }
 
   renderEvents(events, stick?) {
