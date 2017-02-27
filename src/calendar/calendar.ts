@@ -50,7 +50,7 @@ export class CalendarComponent implements OnInit,AfterViewInit,AfterContentCheck
     return $(this.element.nativeElement).fullCalendar('updateEvents', events);
   }
 
-  clientEvents(idOrFilter) {
+  clientEvents(idOrFilter?) {
     return $(this.element.nativeElement).fullCalendar('clientEvents', idOrFilter);
   }
 
