@@ -18,9 +18,9 @@
     "@angular/common": "^2.0.1",
     "@angular/core": "^2.0.1",
     "@angular/forms": "^2.0.1",
-    "fullcalendar": "^3.0.1",
+    "fullcalendar": "^3.2.0",
     "@types/node": "^6.0.42",
-    "@types/fullcalendar": "^2.7.35",
+    "@types/fullcalendar": "^2.7.38",
     "@types/jquery": "^2.0.34",
     "@types/moment": "^2.11.29"
   },
