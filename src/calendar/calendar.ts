@@ -77,5 +77,24 @@ export class CalendarComponent implements OnInit,AfterViewInit,AfterContentCheck
   rerenderEvents() {
     return $(this.element.nativeElement).fullCalendar('rerenderEvents');
   }
-
+  
+  gotoDate(date) {
+    return $(this.element.nativeElement).fullCalendar('gotoDate', date);
+  }
+               
+  fullCalendar(...args: any[]) {
+    if (!args) {
+      return;
+    }
+    switch (args.length) {
+      case 0:
+        return;
+      case 1:
+        return $(this.element.nativeElement).fullCalendar(args[0]);
+      case 2:
+        return $(this.element.nativeElement).fullCalendar(args[0], args[1]);
+      case 3:
+        return $(this.element.nativeElement).fullCalendar(args[0], args[1], args[2]);
+    }
+  }
 }
